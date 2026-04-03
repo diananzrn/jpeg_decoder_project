@@ -82,6 +82,7 @@ def idct_2d(F):
     return f
 
 reconstructed = idct_2d(dequantized)
+print(np.round(reconstructed).astype(int));
 
 # Step 5: Add 128
 final_image = reconstructed + 128
